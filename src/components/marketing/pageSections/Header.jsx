@@ -10,13 +10,18 @@ export default function Header() {
           <img src={Logo} alt='logo Burger House App' className='w-64'/>
         </div>
         <div className=" w-full text-secondary ">
-          
+
           <div className="flex items-center justify-end">
             <img src={Icone} alt="" className="w-5 h-5 mr-1"  />
             <span>Commandez votre repas en ligne</span>
           </div>
-          <div className="">
-            <Button />
+          <div className="flex items-center justify-end">
+              <Button className={'  bg-primary hover:bg-secondary mr-2'}>
+                Inscription
+              </Button> 
+              <Button className={'  bg-primary hover:bg-secondary'}>
+                Connexion
+              </Button>
           </div>
         </div>
             

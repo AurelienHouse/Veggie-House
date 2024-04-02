@@ -1,6 +1,11 @@
 
-export default function Button() {
+// eslint-disable-next-line react/prop-types
+export default function Button({children, className}) {
   return (
-    <div>Mon Button</div>
+    <div>
+        <button className={`${className} px-5 py-3 uppercase shadow-xl text-white tracking-widest text-sm font-medium animate`}>
+            {children}
+            </button>
+    </div>
   )
 }
