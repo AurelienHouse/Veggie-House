@@ -1,9 +1,9 @@
-import React from 'react'
+import HeroTop from "../components/marketing/pageSections/HeroTop";
 
 export default function HomePage() {
   return (
-    <div>
-        Hello world from Home Page
-    </div>
+    <>
+        <HeroTop />
+    </>
   )
 }
