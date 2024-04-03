@@ -139,8 +139,13 @@ export default {
       transparent: colors.transparent,
 
       'primary': '#ffc045',
+      'primary-hover': '#f5b029',
+      'secondary-hover': '#231105',
       'secondary': '#3d2514',
       'redPrice' : '#bf2222',
+      'redPrice-hover' : '#990e0e',
+
+
 
 
 
