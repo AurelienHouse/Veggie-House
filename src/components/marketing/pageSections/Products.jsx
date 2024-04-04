@@ -10,10 +10,15 @@ export default function Products() {
             Toujours des délicieux Burgers
         </HeadingTitle>
 
-        <Heading variant = "h3" theme = "secondary">
+        <Heading theme = "secondary">
             Choisissez et savourez
         </Heading>
-        
+
+        <p className="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsum atque labore consequatur perferendis, molestias ipsam quas et accusamus a veritatis quasi iure amet harum, distinctio quaerat aliquam repudiandae fuga!
+        </p>
+
+
     </Container>
     
   )
