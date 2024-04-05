@@ -11,10 +11,10 @@ export default function Products() {
     <Container>
 
         <HeadingTitle variant='h3'>
-            Toujours des délicieux Burgers
+            Toujours de délicieux Burgers
         </HeadingTitle>
 
-        <Heading theme = "secondary">
+        <Heading theme = "secondary" alignement = "center" className = "my-5">
             Choisissez et savourez
         </Heading>
 
@@ -30,7 +30,7 @@ export default function Products() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center px-5 pb-5">
-                <Heading variant="h3">
+                <Heading variant="h3" className="my-5">
                     Lorem Ipsum dolor
                 </Heading>
                 <p className="text-center">
@@ -48,7 +48,7 @@ export default function Products() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center px-5 pb-5">
-                <Heading variant="h3">
+                <Heading variant="h3" className="my-5">
                     Lorem Ipsum dolor
                 </Heading>
                 <p className="text-center">
@@ -66,7 +66,7 @@ export default function Products() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center px-5 pb-5">
-                <Heading variant="h3">
+                <Heading variant="h3" className="my-5">
                     Lorem Ipsum dolor
                 </Heading>
                 <p className="text-center">
