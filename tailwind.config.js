@@ -1074,6 +1074,10 @@ export default {
       50: '50',
     },
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require('@tailwindcss/forms'),
+
+  ],
 }
 
