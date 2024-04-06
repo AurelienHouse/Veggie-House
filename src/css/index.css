@@ -8,6 +8,7 @@
 body {
     font-family: 'Roboto';
     @apply text-secondary;
+    overflow-x: hidden;
 
 }
 
