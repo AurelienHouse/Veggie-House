@@ -10,17 +10,17 @@ import Image03 from "../../../medias/images/products/Product-2.jpg";
 
 const Slide = ({ children, category, title, image }) => {
   return (
-    <div className="grid grid-cols-2 p-6">
-      <div className="p-10 mb-10">
+    <div className="grid md:grid-cols-2 p-3 md:p-6">
+      <div className="p-5 md:p-10 md:mb-10">
         <Heading variant="h4">{category}</Heading>
         <Heading theme="secondary" variant="h3" className="mb-5">
           {title}
         </Heading>
-        <p className="tracking-wide text-lg leading-relaxed text-gray-800 font-light">
+        <p className="tracking-wide text-lg leading-relaxed text-gray-800 font-light m-0 md:m-10">
           {children}
         </p>
       </div>
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-96 md:h-full">
         <img
           src={image}
           alt="Image d'un evenement à venir"
@@ -66,7 +66,7 @@ export default function Events() {
 
   return (
     <Container>
-      <div className="shadow-2xl mb-20">
+      <div className="shadow-2xl mb-20 border border-gray-100">
         <AliceCarousel
           mouseTracking
           items={items}

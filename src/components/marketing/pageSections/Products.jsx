@@ -11,7 +11,11 @@ export default function Products() {
     <Container>
       <HeadingTitle variant="h3">Toujours de délicieux Burgers</HeadingTitle>
 
-      <Heading theme="secondary" alignement="center" className="my-5">
+      <Heading
+        theme="secondary"
+        alignement="center"
+        className="my-5 text-center"
+      >
         Choisissez et savourez
       </Heading>
 
@@ -22,8 +26,8 @@ export default function Products() {
         repudiandae fuga!
       </p>
 
-      <div className="grid grid-cols-3 gap-x-1 mb-20 mt-10">
-        <div className="w-full h-full ">
+      <div className="grid lg:grid-cols-3 gap-x-1 mb-20 mt-10">
+        <div className="w-full md:w-2/3 lg:w-full h-full mx-auto ">
           <div className="relative w-full h-72">
             <img
               src={Product01}
@@ -39,13 +43,13 @@ export default function Products() {
             <p className="text-center">
               Lorem ipsum dolor is simply text for designer and developper.
             </p>
-            <Button className="font-secondary" color="danger">
+            <Button className="font-secondary mb-10 lg:mb-0" color="danger">
               Commandez
             </Button>
           </div>
         </div>
 
-        <div className="w-full h-full ">
+        <div className="w-full md:w-2/3 lg:w-full h-full mx-auto ">
           <div className="relative w-full h-72">
             <img
               src={Product02}
@@ -61,13 +65,13 @@ export default function Products() {
             <p className="text-center">
               Lorem ipsum dolor is simply text for designer and developper.
             </p>
-            <Button className="font-secondary" color="danger">
+            <Button className="font-secondary mb-10 lg:mb-0" color="danger">
               Commandez
             </Button>
           </div>
         </div>
 
-        <div className="w-full h-full ">
+        <div className="w-full md:w-2/3 lg:w-full h-full mx-auto ">
           <div className="relative w-full h-72">
             <img
               src={Product03}
@@ -83,7 +87,7 @@ export default function Products() {
             <p className="text-center">
               Lorem ipsum dolor is simply text for designer and developper.
             </p>
-            <Button className="font-secondary" color="danger">
+            <Button className="font-secondary lg:mb-0" color="danger">
               Commandez
             </Button>
           </div>
