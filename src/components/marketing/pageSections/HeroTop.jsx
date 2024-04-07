@@ -3,6 +3,7 @@ import Container from "../../elements/Container";
 import Header from "./Header";
 import Products from "../../../medias/images/heroTop/burger-hero-top.png";
 import Button from "../../elements/Button";
+import { Link } from 'react-router-dom';
 
 export default function HeroTop() {
   return (
@@ -47,9 +48,11 @@ export default function HeroTop() {
               </h2>
             </div>
           </div>
+          <Link to="/Signup">
           <Button className="mt-5 w-full lg:w-1/2" color="secondary" theme="big">
             Créer mon compte
           </Button>
+          </Link>
         </Container>
       </div>
     </div>
