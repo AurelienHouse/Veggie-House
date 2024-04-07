@@ -97,14 +97,14 @@ export default function Booking() {
               </div>
               <div>
                 <label htmlFor="sendBooking" className="invisible">
-                  Réservez votre repas
+                  Trouvez une table
                 </label>
                 <input
                   type="button"
                   name="sendBooking"
                   id="sendBooking"
                   className="bg-redPrice hover:bg-redPrice-hover w-full text-white font-secondary tracking-widest uppercase py-5 cursor-pointer rounded-md animate "
-                  value="Reservez votre repas"
+                  value="trouvez une table"
                 />
               </div>
               
