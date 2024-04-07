@@ -87,7 +87,7 @@ export default function Products() {
             <p className="text-center">
               Lorem ipsum dolor is simply text for designer and developper.
             </p>
-            <Button className="font-secondary mb-10 lg:mb-0" color="danger">
+            <Button className="font-secondary lg:mb-0" color="danger">
               Commandez
             </Button>
           </div>
