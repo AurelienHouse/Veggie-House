@@ -5,12 +5,8 @@ import Logo from "../medias/svg/Logo-burger-house.svg";
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "../utils/cn";
-import {
-  IconBrandFacebook,
-  IconBrandGithub,
-  IconBrandGoogle,
+import { 
   IconBrandInstagram,
-  IconBrandOnlyfans,
   IconBrandWhatsapp,
   IconBrandX,
 } from "@tabler/icons-react";
