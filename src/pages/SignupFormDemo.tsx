@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Logo from "../medias/svg/Logo-burger-house.svg";
+import { Link } from "react-router-dom";
+
 
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
@@ -19,16 +21,18 @@ export default function SignupFormDemo() {
   };
   return (
     
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <div className="absolute w-full top-0 left-0 -z-10">
+    <div className="max-w-md w-full mx-auto mt-5 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <div className="absolute top-0 left-0 -z-10">
 
       <BackgroundWave />
       </div>
+      <Link to="/">
       <img
           src={Logo}
           alt="logo Burger House App"
-          className="w-64 mb-7"
+          className="w-64 mb-7 hover:bg-primary animate"
           />
+          </Link>
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
         Bienvenue chez Burger House
       </h2>
@@ -36,7 +40,7 @@ export default function SignupFormDemo() {
         Creez un compte pour réservez plus facilement
       </p>
 
-      <form className="my-8" onSubmit={handleSubmit}>
+      <form className="my-auto mx-auto" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="firstname">Nom</Label>
