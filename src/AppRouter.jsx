@@ -7,8 +7,6 @@ function AppRouter() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-      </Routes>
-      <Routes>
         <Route path="/SignUp" element={<SignupFormDemo />} />
       </Routes>
     </Router>
