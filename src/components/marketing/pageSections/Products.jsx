@@ -20,10 +20,10 @@ export default function Products() {
       </Heading>
 
       <p className="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsum
-        atque labore consequatur perferendis, molestias ipsam quas et accusamus
-        a veritatis quasi iure amet harum, distinctio quaerat aliquam
-        repudiandae fuga!
+        Les burgers végétariens, préparés avec des ingrédients comme le tofu,
+        les haricots noirs et le quinoa, sont riches en fibres, protéines
+        végétales et micronutriments! Par exemple, un burger végétarien à base
+        de soja contient environ 11 grammes de protéines et 3 grammes de fibres.
       </p>
 
       <div className="grid lg:grid-cols-3 gap-x-1 mb-20 mt-10">
@@ -38,10 +38,12 @@ export default function Products() {
 
           <div className="flex flex-col items-center justify-center px-5 pb-5">
             <Heading variant="h3" className="my-5">
-              Lorem Ipsum dolor
+              Le spécial K
             </Heading>
             <p className="text-center">
-              Lorem ipsum dolor is simply text for designer and developper.
+              Les légumes-feuilles fournissent du fer et de la vitamine K,
+              tandis que les légumes orange (carottes, patates douces) sont
+              riches en vitamine.
             </p>
             <Button className="font-secondary mb-10 lg:mb-0" color="danger">
               Commandez
@@ -60,10 +62,12 @@ export default function Products() {
 
           <div className="flex flex-col items-center justify-center px-5 pb-5">
             <Heading variant="h3" className="my-5">
-              Lorem Ipsum dolor
+              Le Double Soja
             </Heading>
             <p className="text-center">
-              Lorem ipsum dolor is simply text for designer and developper.
+              Les Double Soja sont légèrement moins caloriques que leurs
+              homologues à base de viande. Ils contribuent à réduire
+              l’empreinte carbone en utilisant moins de ressources naturelles!
             </p>
             <Button className="font-secondary mb-10 lg:mb-0" color="danger">
               Commandez
@@ -82,10 +86,12 @@ export default function Products() {
 
           <div className="flex flex-col items-center justify-center px-5 pb-5">
             <Heading variant="h3" className="my-5">
-              Lorem Ipsum dolor
+              Le vert de Terre
             </Heading>
             <p className="text-center">
-              Lorem ipsum dolor is simply text for designer and developper.
+              Les burgers végétariens sont une alternative savoureuse et
+              polyvalente à la viande, offrant des bienfaits pour la santé et
+              l’environnement. 🌱🍔{" "}
             </p>
             <Button className="font-secondary lg:mb-0" color="danger">
               Commandez
