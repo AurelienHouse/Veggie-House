@@ -1,0 +1,11 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g id="pain-bas">
+    <rect x="10" y="50" width="80" height="20" fill="brown" />
+  </g>
+  <g id="viande">
+    <rect x="20" y="30" width="60" height="15" fill="red" />
+  </g>
+  <g id="pain-haut">
+    <rect x="10" y="10" width="80" height="20" fill="brown" />
+  </g>
+</svg>

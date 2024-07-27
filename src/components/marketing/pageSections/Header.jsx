@@ -3,17 +3,35 @@ import Picto from "../../../medias/svg/picto-burger-house.svg";
 import Icone from "../../../medias/svg/ico-bag-clickAndCollect.svg";
 import Button from "../../elements/Button";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Header() {
+  const letters = "Veggie House".split("");
+
   return (
     <div className="relative z-10 flex items-center justify-between py-10">
-
-<div className="w-full relative flex items-center">
-  <img src={Picto} alt="logo Veggie House App" className="w-10" />
-  <h1 className="uppercase text-3xl ml-2">Veggie House</h1>
-</div>
-
-
+      <div className="w-full relative flex items-center">
+        <motion.img
+          src={Picto}
+          alt="logo Veggie House App"
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2, ease: "easeInOut" }}
+          className=" w-10"
+        />{" "}
+        <h1 className="text-3xl">
+          {letters.map((letter, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: index * 0.2 }}
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </h1>
+      </div>
 
       <div className=" w-full text-secondary ">
         <div className="items-center justify-end hidden md:flex">
