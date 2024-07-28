@@ -17,7 +17,7 @@ export default function Header() {
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          className=" w-10"
+          className=" w-10 mr-2"
         />{" "}
         <h1 className="text-3xl">
           {letters.map((letter, index) => (
