@@ -12,8 +12,8 @@ export default function HomePage() {
   const productsRef = useRef(null);
 
   const variants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0 },
   };
 
   return (
@@ -24,7 +24,7 @@ export default function HomePage() {
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.5 }}
-        transition={{ duration: 2.5 }}
+        transition={{ duration: 1.5 }}
         variants={variants}
       >
         <LastProducts />
@@ -34,7 +34,7 @@ export default function HomePage() {
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.5 }}
-        transition={{ duration: 2.5 }}
+        transition={{ duration: 1.5 }}
         variants={variants}
       >
         <Products />
