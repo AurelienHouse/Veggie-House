@@ -38,8 +38,8 @@ export default function HeroTop() {
             <img
               src={Products}
               alt="image d'un menu Hamburger frites et soda"
-              className="hidden lg:block absolute z-0 lg:-top-64 right-0"
-              style={{ width: "568px" }}
+              className="hidden lg:block absolute z-0 lg:-top-36 right-0"
+              style={{ width: "520px" }}
             />
 
             <motion.div
