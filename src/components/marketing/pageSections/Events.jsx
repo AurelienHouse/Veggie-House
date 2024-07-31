@@ -5,8 +5,8 @@ import Heading from "../../elements/DisplayTitles/Heading";
 import AliceCarousel from "react-alice-carousel";
 import "../../../css/carousel.css";
 import Image01 from "../../../medias/images/events/dorian-hurst-d-igN2ptyC8-unsplash.jpg";
-import Image02 from "../../../medias/images/products/Product-1.jpg";
-import Image03 from "../../../medias/images/products/Product-2.jpg";
+import Image02 from "../../../medias/images/products/OIG4.jpg";
+import Image03 from "../../../medias/images/products/double-burger-02.jpg";
 
 const Slide = ({ children, category, title, image }) => {
   return (

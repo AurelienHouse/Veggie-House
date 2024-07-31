@@ -34,7 +34,7 @@ export default function HomePage() {
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.5 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1 }}
         variants={variants}
       >
         <Products />
