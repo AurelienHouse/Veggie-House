@@ -57,7 +57,7 @@ export function ButtonModal() {
                       rotate: 0,
                       zIndex: 100,
                     }}
-                    className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                    className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-green-700 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
                   >
                     <img
                       src={image}

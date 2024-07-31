@@ -138,7 +138,7 @@ export default {
       current: colors.current,
       transparent: colors.transparent,
 
-      'primary': '#ffc045',
+      'primary': '#45ac30',
       'primary-hover': '#f5b029',
       'secondary-hover': '#231105',
       'secondary': '#3d2514',
