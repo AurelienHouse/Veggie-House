@@ -1,10 +1,10 @@
 import Container from "../../elements/Container";
 import Heading from "../../elements/DisplayTitles/Heading";
 import HeadingTitle from "../../elements/DisplayTitles/HeadingTitle";
-import Button from "../../elements/Button";
 import Product01 from "../../../medias/images/products/Product-1.jpg";
 import Product02 from "../../../medias/images/products/Product-2.jpg";
 import Product03 from "../../../medias/images/products/Product-3.jpg";
+import { ButtonModal } from "../../elements/ButtonModal";
 
 export default function Products() {
   return (
@@ -45,9 +45,10 @@ export default function Products() {
               tandis que les légumes orange (carottes, patates douces) sont
               riches en vitamine.
             </p>
-            <Button className="font-secondary mb-10 lg:mb-0" color="danger">
-              Commandez
-            </Button>
+            <ButtonModal
+              className="font-secondary mb-10 lg:mb-0"
+              color="danger"
+            />
           </div>
         </div>
 
@@ -66,12 +67,14 @@ export default function Products() {
             </Heading>
             <p className="text-center">
               Les Double Soja sont légèrement moins caloriques que leurs
-              homologues à base de viande. Ils contribuent à réduire
-              l’empreinte carbone en utilisant moins de ressources naturelles!
+              homologues à base de viande. Ils contribuent à réduire l’empreinte
+              carbone en utilisant moins de ressources naturelles!
             </p>
-            <Button className="font-secondary mb-10 lg:mb-0" color="danger">
-              Commandez
-            </Button>
+
+            <ButtonModal
+              className="font-secondary mb-10 lg:mb-0"
+              color="danger"
+            />
           </div>
         </div>
 
@@ -93,9 +96,10 @@ export default function Products() {
               polyvalente à la viande, offrant des bienfaits pour la santé et
               l’environnement. 🌱🍔{" "}
             </p>
-            <Button className="font-secondary lg:mb-0" color="danger">
-              Commandez
-            </Button>
+            <ButtonModal
+              className="font-secondary mb-10 lg:mb-0"
+              color="danger"
+            />
           </div>
         </div>
       </div>
