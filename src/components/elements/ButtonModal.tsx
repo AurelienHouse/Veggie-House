@@ -19,7 +19,11 @@ export function ButtonModal() {
   ];
   return (
     <div className="  flex items-center justify-center">
-      <Button className="font-secondary mb-10 lg:mb-0" color="danger">
+      <Button
+        className="font-secondary mb-10 lg:mb-0"
+        color="danger"
+        theme={undefined}
+      >
         <Modal>
           <ModalTrigger className=" flex justify-center group/modal-btn">
             <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
@@ -61,51 +65,14 @@ export function ButtonModal() {
                   >
                     <img
                       src={image}
-                      alt="bali images"
-                      width="500"
-                      height="500"
-                      className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                      alt="aliments images"
+                      className="rounded-lg object-cover flex-shrink-0 w-full md:w-40 h-full md:h-40"
                     />
                   </motion.div>
                 ))}
               </div>
               <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-                {/* <div className="flex  items-center justify-center">
-                <PlaneIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  5 connecting flights
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <ElevatorIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  12 hotels
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <VacationIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  69 visiting spots
-                </span>
-              </div>
-              <div className="flex  items-center justify-center">
-                <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Good food everyday
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <MicIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Open Mic
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <ParachuteIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Paragliding
-                </span>
-              </div> */}
+                
               </div>
             </ModalContent>
             {/* <ModalFooter className="gap-4">
