@@ -4,6 +4,7 @@ import Heading from "../../elements/DisplayTitles/Heading";
 import Assiette from "../../../medias/images/background/Assiette-burger-frites.png";
 import Burger from "../../../medias/images/background/Burger.png";
 import Sauce from "../../../medias/images/background/Sauce-pimente.png";
+import { Link } from "react-router-dom";
 
 export default function Booking() {
   return (
@@ -96,6 +97,7 @@ export default function Booking() {
                 />
               </div>
               <div>
+              <Link to="/Signup">
                 <label htmlFor="sendBooking" className="invisible">
                   Trouvez une table
                 </label>
@@ -106,6 +108,7 @@ export default function Booking() {
                   className="bg-redPrice hover:bg-redPrice-hover w-full text-white font-secondary tracking-widest uppercase py-5 cursor-pointer rounded-md animate "
                   value="trouvez une table"
                 />
+                </Link>
               </div>
               
             </form>

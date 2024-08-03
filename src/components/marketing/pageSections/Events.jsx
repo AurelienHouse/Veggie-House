@@ -34,33 +34,33 @@ export default function Events() {
   const items = [
     <Slide
       image={Image01}
-      category="evenement à venir"
-      title="vivez la demi-finale"
+      category="événements à venir"
+      title="vibrez sur place"
     >
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-      temporibus sapiente enim molestiae, perspiciatis cum amet, eius
-      consectetur voluptate dicta odit officia fugit atque consequatur a
-      cupiditate labore repudiandae quae?
+      “Vivez l’adrénaline des grands matchs chez nous ! Rejoignez-nous pour des
+      soirées sportives inoubliables, accompagnées de notre délicieux burger
+      végétarien et de notre fameuse sauce maison.”
     </Slide>,
     <Slide
       image={Image02}
       category="Bientôt disponible"
       title="Nouveau Burger Sauce Maison"
     >
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-      temporibus sapiente enim molestiae, perspiciatis cum amet, eius
-      consectetur voluptate dicta odit officia fugit atque consequatur a
-      cupiditate labore repudiandae quae?
+      Ce qui rend notre burger vraiment unique, c’est notre sauce maison.
+      Élaborée avec soin par notre chef, cette sauce secrète apporte une
+      explosion de saveurs à chaque bouchée. Un mélange parfait d’épices et
+      d’herbes aromatiques, elle sublime chaque ingrédient et vous transporte
+      dans un voyage gustatif exceptionnel.
     </Slide>,
     <Slide
       image={Image03}
-      category="Bientôt disponible"
-      title="Nouveau Double Steak"
+      category="Pour tous les gôuts"
+      title="Vous avez le choix"
     >
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-      temporibus sapiente enim molestiae, perspiciatis cum amet, eius
-      consectetur voluptate dicta odit officia fugit atque consequatur a
-      cupiditate labore repudiandae quae?
+      Que vous soyez végétarien ou simplement à la recherche d’une alternative
+      saine et délicieuse, nos burgers végétarien sont fait pour vous. Venez
+      découvrir une nouvelle façon de savourer un burger, sans compromis sur le
+      goût ou la qualité.
     </Slide>,
   ];
 
