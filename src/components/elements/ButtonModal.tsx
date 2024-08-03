@@ -11,11 +11,11 @@ import Button from "./Button";
 
 export function ButtonModal() {
   const images = [
-    "../../../src/medias/images/supplements/fritespatatesdouces.jpg",
-    "../../../src/medias/images/supplements/brownies.jpg",
-    "../../../src/medias/images/supplements/menus.jpg",
-    "../../../src/medias/images/supplements/glaces02.jpg",
-    "../../../src/medias/images/supplements/jusdefruits.jpg",
+    "../../src/medias/images/supplements/fritespatatesdouces.jpg",
+    "../../src/medias/images/supplements/brownies.jpg",
+    "../../src/medias/images/supplements/menus.jpg",
+    "../../src/medias/images/supplements/glaces02.jpg",
+    "../../src/medias/images/supplements/jusdefruits.jpg",
   ];
   return (
     <div className="  flex items-center justify-center">
@@ -71,9 +71,7 @@ export function ButtonModal() {
                   </motion.div>
                 ))}
               </div>
-              <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-                
-              </div>
+              <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto"></div>
             </ModalContent>
             {/* <ModalFooter className="gap-4">
             <button className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
