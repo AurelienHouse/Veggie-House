@@ -1,109 +1,129 @@
 "use client";
 import React from "react";
-import Logo from "../medias/svg/Logo-burger-house.svg";
-import { Link } from "react-router-dom";
+import Illustration from "../medias/images/background/bg-food.jpg";
+import { motion } from "framer-motion";
 
+import Logo from "../medias/svg/picto-burger-house.svg";
+import { Link } from "react-router-dom";
 
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "../utils/cn";
-import { 
+import {
   IconBrandInstagram,
   IconBrandWhatsapp,
   IconBrandX,
 } from "@tabler/icons-react";
-import { BackgroundWave } from "../components/elements/BackgroundWave";
 
 export default function SignupFormDemo() {
+  const letters = "Veggie House".split("");
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
   };
   return (
-    
-    <div className="max-w-md w-full mx-auto mt-5 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <div className="absolute top-0 left-0 -z-10">
+    <div
+      className="flex bg-repeat w-full h-full pb-20 md:pb-30"
+      style={{ backgroundImage: `url(${Illustration})` }}
+    >
+      <div className="max-w-md w-full mx-auto mt-12 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border border-green-800 backdrop-blur-2xl">
+        <div className="absolute top-0 left-0 -z-10"></div>
+        <Link to="/">
+          <div className="relative z-10 flex items-center justify-between py-10">
+            <img
+              src={Logo}
+              alt="logo Burger House App"
+              className="w-24 mb-7 hover:bg-primary animate"
+            />
+            <h1 className="text-4xl">
+              {letters.map((letter, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: index * 0.2 }}
+                >
+                  {letter}
+                </motion.span>
+              ))}
+            </h1>
+          </div>
+        </Link>
+        <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
+          Bienvenue chez Veggie House
+        </h2>
+        <p className="text-neutral-800 text-sm max-w-sm mt-2 ">
+          Creez un compte pour réserver plus facilement.
+        </p>
 
-      <BackgroundWave />
-      </div>
-      <Link to="/">
-      <img
-          src={Logo}
-          alt="logo Burger House App"
-          className="w-64 mb-7 hover:bg-primary animate"
-          />
-          </Link>
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-        Bienvenue chez Burger House
-      </h2>
-      <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Creez un compte pour réservez plus facilement
-      </p>
-
-      <form className="my-auto mx-auto" onSubmit={handleSubmit}>
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-          <LabelInputContainer>
-            <Label htmlFor="firstname">Nom</Label>
-            <Input id="firstname" placeholder="Doe" type="text" />
+        <form className="my-auto mx-auto" onSubmit={handleSubmit}>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+            <LabelInputContainer>
+              <Label htmlFor="firstname">Nom</Label>
+              <Input id="firstname" placeholder="Doe" type="text" />
+            </LabelInputContainer>
+            <LabelInputContainer>
+              <Label htmlFor="lastname">Prénom</Label>
+              <Input id="lastname" placeholder="John" type="text" />
+            </LabelInputContainer>
+          </div>
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="email">Courriel</Label>
+            <Input
+              id="email"
+              placeholder="mon.mail@courriel.com"
+              type="email"
+            />
           </LabelInputContainer>
-          <LabelInputContainer>
-            <Label htmlFor="lastname">Prénom</Label>
-            <Input id="lastname" placeholder="John" type="text" />
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="password">Mot de passe</Label>
+            <Input id="password" placeholder="••••••••" type="password" />
           </LabelInputContainer>
-        </div>
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Courriel</Label>
-          <Input id="email" placeholder="mon.mail@courriel.com" type="email" />
-        </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="password">Mot de passe</Label>
-          <Input id="password" placeholder="••••••••" type="password" />
-        </LabelInputContainer>
-        
 
-        <button
-          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-          type="submit"
+          <button
+            className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+            type="submit"
           >
-          Sign up &rarr;
-          <BottomGradient />
-        </button>
+            Sign up &rarr;
+            <BottomGradient />
+          </button>
 
-        <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+          <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
-        <div className="flex flex-col space-y-4">
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="submit"
+          <div className="flex flex-col space-y-4">
+            <button
+              className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+              type="submit"
             >
-            <IconBrandInstagram className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Instagram
-            </span>
-            <BottomGradient />
-          </button>
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="submit"
+              <IconBrandInstagram className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
+              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                Instagram
+              </span>
+              <BottomGradient />
+            </button>
+            <button
+              className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+              type="submit"
             >
-            <IconBrandX className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              X (Twitter)
-            </span>
-            <BottomGradient />
-          </button>
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="submit"
+              <IconBrandX className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
+              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                X (Twitter)
+              </span>
+              <BottomGradient />
+            </button>
+            <button
+              className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+              type="submit"
             >
-            <IconBrandWhatsapp className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Whatsapp
-            </span>
-            <BottomGradient />
-          </button>
-        </div>
-      </form>
+              <IconBrandWhatsapp className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
+              <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                Whatsapp
+              </span>
+              <BottomGradient />
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
