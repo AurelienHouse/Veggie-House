@@ -23,7 +23,7 @@ export default function SignupFormDemo() {
   };
   return (
     <div
-      className="flex bg-repeat w-full h-full pb-20 md:pb-30"
+      className="flex bg-repeat w-full h-full"
       style={{ backgroundImage: `url(${Illustration})` }}
     >
       <div className="max-w-md w-full mx-auto mt-12 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border border-green-800 backdrop-blur-2xl">
