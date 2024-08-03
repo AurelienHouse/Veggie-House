@@ -23,10 +23,14 @@ export default function SignupFormDemo() {
   };
   return (
     <div
-      className="flex bg-repeat w-full h-full"
-      style={{ backgroundImage: `url(${Illustration})` }}
+      className="flex bg-repeat w-full min-h-screen"
+      style={{
+        backgroundImage: `url(${Illustration})`,
+        backgroundSize: "justify",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="max-w-md w-full mx-auto mt-12 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border border-green-800 backdrop-blur-2xl">
+      <div className="max-w-md w-full mx-auto mt-12 mb-12 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border border-green-800 backdrop-blur-2xl">
         <div className="absolute top-0 left-0 -z-10"></div>
         <Link to="/">
           <div className="relative z-10 flex items-center justify-between py-10">
@@ -49,11 +53,12 @@ export default function SignupFormDemo() {
             </h1>
           </div>
         </Link>
-        <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
+        <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-500 to-green-600">
           Bienvenue chez Veggie House
         </h2>
-        <p className="text-neutral-800 text-sm max-w-sm mt-2 ">
-          Creez un compte pour réserver plus facilement.
+
+        <p className="text-neutral-800 text-lg max-w-sm mt-2 ">
+          Créez un compte pour réserver plus facilement.
         </p>
 
         <form className="my-auto mx-auto" onSubmit={handleSubmit}>
@@ -131,8 +136,8 @@ export default function SignupFormDemo() {
 const BottomGradient = () => {
   return (
     <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-1 w-full -bottom-1 inset-x-0 bg-gradient-to-r from-transparent via-primary to-transparent" />
+      <span className="group-hover/btn:opacity-100 blur-md block transition duration-500 opacity-0 absolute h-1 w-3/4 mx-auto -bottom-1 inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
     </>
   );
 };
