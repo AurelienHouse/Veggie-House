@@ -36,11 +36,14 @@ export function ButtonModal() {
           </ModalTrigger>
           <ModalBody>
             <ModalContent>
-              <h4 className="font-secondary mb-10 lg:mb-0" color="danger">
+              <h4
+                className="font-secondary text-black dark:text-white mb-10 lg:mb-0"
+                color="danger"
+              >
                 Votre Commande est bien prise en compte.{" "}
               </h4>
               <h4
-                className="font-secondary mb-10 uppercase lg:mb-0"
+                className="font-secondary text-black dark:text-white mb-10 uppercase lg:mb-0"
                 color="danger"
               >
                 Pensez à la completer.{" "}
