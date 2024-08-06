@@ -12,11 +12,11 @@ import Button from "./Button";
 
 export function ButtonModal() {
   const images = [
-    "../../../public/imagesI.A/brownies.jpg",
-    // "../../../public/imagesI.A/fritespatatesdouces.jpg",
-    "../../../public/imagesI.A/menus.jpg",
-    "../../../public/imagesI.A/glaces02.jpg",
-    "../../../public/imagesI.A/jusdefruits.jpg",
+    "https://aurelienmaison.book.fr/files/1/112482/g_20_T9uoTAOnrEp9.jpg",
+    "https://aurelienmaison.book.fr/files/1/112482/g_20_lngG8kunWJ4l.jpg",
+    "https://aurelienmaison.book.fr/files/1/112482/g_20_mPGHfur930ci.jpg",
+    "https://aurelienmaison.book.fr/files/1/112482/g_20_SPLQz0Om1lMr.jpg",
+    "https://aurelienmaison.book.fr/files/1/112482/g_20_73VQwlPRtLcM.jpg",
   ];
   return (
     <div className="  flex items-center justify-center">
@@ -74,7 +74,6 @@ export function ButtonModal() {
               </div>
               <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto"></div>
             </ModalContent>
-            
           </ModalBody>
         </Modal>
       </Button>
