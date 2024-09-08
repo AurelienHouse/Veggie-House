@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
 export default {
   content: [
   "./index.html",
@@ -16,6 +17,8 @@ export default {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
+      scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
     },
     aria: {
       busy: 'busy="true"',
@@ -144,6 +147,8 @@ export default {
       'secondary': '#3d2514',
       'redPrice' : '#bf2222',
       'redPrice-hover' : '#990e0e',
+      'greenLight-veggie' : '#b7e26c',
+      'greenDark-veggie' : '#80a841',
 
 
 
@@ -586,6 +591,11 @@ export default {
       spin: {
         to: {
           transform: 'rotate(360deg)',
+        },
+      },
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
         },
       },
       ping: {
@@ -1074,10 +1084,21 @@ export default {
       50: '50',
     },
   },
-  plugins: [
+  plugins: [addVariablesForColors,
     // eslint-disable-next-line no-undef
     require('@tailwindcss/forms'),
 
   ],
+  
+};
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
 }
 

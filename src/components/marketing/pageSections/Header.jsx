@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import Picto from "../../../medias/svg/picto-burger-house.svg";
 import Icone from "../../../medias/svg/ico-bag-clickAndCollect.svg";
 import Button from "../../elements/Button";
+import BurgerLogo from "../../elements/BurgerLogo";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -11,14 +11,7 @@ export default function Header() {
   return (
     <div className="relative z-10 flex items-center justify-between py-10">
       <div className="w-full relative flex items-center">
-        <motion.img
-          src={Picto}
-          alt="logo Veggie House App"
-          initial={{ y: "100%", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut" }}
-          className=" w-10 mr-2"
-        />{" "}
+        <BurgerLogo />
         <h1 className="text-3xl">
           {letters.map((letter, index) => (
             <motion.span

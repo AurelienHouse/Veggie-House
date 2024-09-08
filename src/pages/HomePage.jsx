@@ -6,6 +6,7 @@ import HeroTop from "../components/marketing/pageSections/HeroTop";
 import LastProducts from "../components/marketing/pageSections/LastProducts";
 import Products from "../components/marketing/pageSections/Products";
 import { motion } from "framer-motion";
+import { InfiniteMovingCardsDemo } from "../components/marketing/pageSections/InfiniteMovingCardsDemo";
 
 export default function HomePage() {
   const lastProductsRef = useRef(null);
@@ -19,6 +20,7 @@ export default function HomePage() {
   return (
     <>
       <HeroTop />
+      <InfiniteMovingCardsDemo />
       <motion.div
         ref={lastProductsRef}
         initial="hidden"
