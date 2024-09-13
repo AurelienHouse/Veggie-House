@@ -2,8 +2,6 @@
 import React from "react";
 import Illustration from "../medias/images/background/bg-food.jpg";
 import { motion } from "framer-motion";
-
-import Logo from "../medias/svg/picto-burger-house.svg";
 import { Link } from "react-router-dom";
 
 import { Label } from "../components/ui/label";
@@ -14,6 +12,7 @@ import {
   IconBrandWhatsapp,
   IconBrandX,
 } from "@tabler/icons-react";
+import BurgerLogo from "../components/elements/BurgerLogo";
 
 export default function SignupFormDemo() {
   const letters = "Veggie House".split("");
@@ -34,15 +33,12 @@ export default function SignupFormDemo() {
         <div className="absolute top-0 left-0 -z-10"></div>
         <Link to="/">
           <div className="relative z-10 flex items-center justify-between py-10">
-            <img
-              src={Logo}
-              alt="logo Burger House App"
-              className="w-24 mb-7 hover:bg-primary animate"
+            <BurgerLogo
             />
             <h1 className="text-4xl">
               {letters.map((letter, index) => (
                 <motion.span
-                  key={index}
+                  key={`${letter}-${index}`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: index * 0.2 }}
