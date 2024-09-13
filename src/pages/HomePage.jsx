@@ -41,6 +41,7 @@ export default function HomePage() {
       >
         <Products />
       </motion.div>
+      
       <Events />
       <Booking />
       <Footer />

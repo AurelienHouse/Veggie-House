@@ -37,7 +37,7 @@ export default function HeroTop() {
           <div className="relative mt-10 md:mt-28 w-full">
             <img
               src={Products}
-              alt="image d'un menu Hamburger frites et soda"
+              alt="Menu Hamburger frites et soda"
               className="hidden lg:block absolute z-0 lg:-top-36 right-0"
               style={{ width: "520px" }}
             />
@@ -72,7 +72,7 @@ export default function HeroTop() {
             <h1 className="mb-4 font-semibold">
               {text.split("").map((char, index) => (
                 <motion.span
-                  key={index}
+                  key={`${char}-${index}`}
                   custom={index}
                   initial="hidden"
                   animate="visible"
@@ -88,10 +88,7 @@ export default function HeroTop() {
                 House
               </span>
               <span className="text-3xl ml-0 sm:ml-3">
-                Manger
-                <span className="text-redPrice">Sans</span>
-                Tuer
-              </span>
+                Manger<span className="text-redPrice">Sans</span>Tuer</span>
             </h2>
           </motion.div>
 

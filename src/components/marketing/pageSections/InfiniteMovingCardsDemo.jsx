@@ -1,11 +1,11 @@
 import Container from "../../elements/Container";
 import { InfiniteMovingCards } from "../../ui/infinite-moving-cards";
 
-("use client");
+
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <>
+    
       <Container>
         <div className="h-[24rem] rounded-md flex flex-col  bg-white  items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
@@ -22,7 +22,7 @@ export function InfiniteMovingCardsDemo() {
           />
         </div>
       </Container>
-    </>
+    
   );
 }
 

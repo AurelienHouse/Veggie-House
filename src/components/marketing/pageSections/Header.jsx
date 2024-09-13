@@ -15,7 +15,7 @@ export default function Header() {
         <h1 className="text-3xl">
           {letters.map((letter, index) => (
             <motion.span
-              key={index}
+              key={`${letter}-${index}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: index * 0.2 }}

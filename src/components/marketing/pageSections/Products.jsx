@@ -31,7 +31,7 @@ export default function Products() {
           <div className="relative w-full h-72">
             <img
               src={Product01}
-              alt="image d'un burger avec une viande bien epaise"
+              alt="Burger avec une viande bien epaise"
               className="bg-primary absolute top-0 left-0 w-full h-full object-cover z-0"
             />
           </div>
@@ -56,7 +56,7 @@ export default function Products() {
           <div className="relative w-full h-72">
             <img
               src={Product02}
-              alt="image d'un burger avec une viande bien epaise"
+              alt="Burger avec une viande bien epaise"
               className="bg-primary absolute top-0 left-0 w-full h-full object-cover z-0"
             />
           </div>
@@ -82,7 +82,7 @@ export default function Products() {
           <div className="relative w-full h-72">
             <img
               src={Product03}
-              alt="image d'un burger avec une viande bien epaise"
+              alt="Burger avec une viande bien epaise"
               className="bg-primary absolute top-0 left-0 w-full h-full object-cover z-0"
             />
           </div>
